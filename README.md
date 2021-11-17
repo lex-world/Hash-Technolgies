@@ -1,1 +1,1 @@
-# Hash-Technolgies
+# Hash Technologies

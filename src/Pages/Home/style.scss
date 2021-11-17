@@ -1,0 +1,140 @@
+.home__container {
+  background: #f6f6f4;
+  padding: 0 80px;
+
+  /** @section => landing banner */
+  .home__container__landingBanner {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    padding: 92px 0;
+    align-items: center;
+
+    div {
+      max-width: 50%;
+    }
+
+    h1 {
+      line-height: 90px;
+      font-size: 62px;
+      color: #16203f;
+      font-weight: 600;
+    }
+    p {
+      margin-top: 16px;
+      font-size: 20px;
+      font-family: "Lora", serif;
+      line-height: 1.7;
+    }
+
+    img {
+      width: 48%;
+      object-fit: contain;
+    }
+  }
+
+  /** @section => core values */
+  .home__container__coreValues {
+    background: #eceeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 108px;
+    margin-top: 200px;
+    padding-top: 120px;
+
+    div {
+      max-width: 40%;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: -240px;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+      }
+      h1 {
+        color: #17203e;
+        margin: 24px 0;
+        font-size: 28px;
+      }
+
+      p {
+        font-family: "Lora", serif;
+        font-size: 16px;
+        line-height: 1.7;
+        font-weight: 400;
+        color: #434140;
+      }
+    }
+  }
+
+  /** @section => our work */
+  .home__container__ourWork {
+    margin-top: 150px;
+    padding: 0 80px;
+
+    .home__container__ourWork__workItem {
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 0;
+      justify-content: space-between;
+      align-items: center;
+
+      .home__container__ourWork__workItem__content {
+        padding: 0 70px;
+
+        span {
+          color: #17203e;
+          font-family: "Raleway", sans-serif;
+          font-weight: 500;
+        }
+
+        h1 {
+          font-size: 32px;
+          font-family: "Raleway", sans-serif;
+          margin-bottom: 32px;
+          color: #434140;
+        }
+
+        p {
+          display: block;
+          font-family: "Lora", serif;
+          color: #434140;
+          line-height: 1.7;
+
+          &.highlight {
+            font-size: 20px;
+            margin-bottom: 8px;
+          }
+          margin-bottom: 24px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #434140;
+          line-height: 1.8;
+          font-weight: 600;
+          border-left: 3px solid #17203e;
+          padding: 10px 0;
+          padding-left: 16px;
+          font-family: "Raleway", sans-serif;
+          transition: all 0.3s ease;
+
+          &:hover{
+              color: #185F7D;
+              padding-left: 20px;
+          }
+        }
+      }
+      img {
+        max-width: 560px;
+        object-fit: contain;
+      }
+
+      &.second {
+        margin-top: 150px;
+      }
+    }
+  }
+}
