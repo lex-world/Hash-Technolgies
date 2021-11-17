@@ -1,0 +1,21 @@
+.footer__container{
+    padding: 24px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif!important;
+    
+    ul{
+        list-style: none;
+        
+        li{
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: 500;
+            color: #7a7a7a;
+        }
+    }
+}

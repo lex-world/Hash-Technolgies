@@ -9,6 +9,11 @@ import {
 } from "react-location";
 
 /**
+ * @components
+ */
+import Footer from "./Components/Footer/Footer";
+
+/**
  * @pages
  */
 import Home from "./Pages/Home/Home";
@@ -31,6 +36,7 @@ export default function App() {
           // },
         ]}
       />
+      <Footer/>
     </>
   );
 }

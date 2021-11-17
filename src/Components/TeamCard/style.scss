@@ -1,0 +1,55 @@
+.TeamCard__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  transition: all 0.3s ease;
+  padding: 35px 25px;
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #434140;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 14px;
+    color: #434140;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 22px;
+  }
+
+  p {
+    width: 22vw;
+    font-size: 16px;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 25px;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+
+      i{
+          font-size: 22px;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px 0 rgba(145, 158, 171, 0.24),
+      0 16px 32px -4px rgba(145, 158, 171, 0.24);
+    border-radius: 14px;
+  }
+}

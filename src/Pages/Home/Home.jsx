@@ -19,6 +19,7 @@ import SVisual2 from "../../Assets/small-visual2.png";
  * @components
  */
 import Navbar from "../../Components/Navbar/Navbar";
+import TeamCard from "../../Components/TeamCard/TeamCard";
 
 export default function Home() {
   return (
@@ -132,6 +133,27 @@ export default function Home() {
           supporting and collaborating with a large number of similarly minded
           values aligned teams.
         </p>
+
+        <div className="home__container__ourTeam__teams">
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+          <TeamCard />
+        </div>
+      </div>
+
+      {/**
+       * @section => team expansion
+       */}
+      <div className="home__container__teamExpansion">
+        <h1>We are expanding!</h1>
+        <p>
+          Join Edge & Node to help build the decentralized future and scale
+          human coordination on the internet.
+        </p>
+        <Link>View Jobs</Link>
       </div>
     </div>
   );
