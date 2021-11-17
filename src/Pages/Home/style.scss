@@ -2,6 +2,10 @@
   background: #f6f6f4;
   padding: 0 80px;
 
+  @media (max-width: 1280px){
+    padding: 0 24px;
+  }
+
   /** @section => landing banner */
   .home__container__landingBanner {
     display: flex;
@@ -10,12 +14,16 @@
     padding: 92px 0;
     align-items: center;
 
+    @media (max-width: 748px){
+      padding: 24px 0;
+    }
+
     div {
       max-width: 50%;
     }
 
     h1 {
-      line-height: 90px;
+      line-height: 3.5rem;
       font-size: 62px;
       color: #16203f;
       font-weight: 600;
