@@ -1,0 +1,50 @@
+.privacyPolicy__container {
+  padding: 0 80px;
+
+  @media (max-width: 1280px) {
+    padding: 0 24px;
+  }
+
+  font-weight: 700;
+  .privacyPolicy__header, .privacyPolicy__scope, .privacyPolicy__contactUs {
+    h1 {
+      margin-top: 10vh;
+      font-size: 48px;
+      line-height: 1.2;
+      color: #171f3a;
+    }
+
+    .lastUpdated {
+      color: #9a9a9a;
+      line-height: 2.5;
+    }
+
+    .date {
+      margin-bottom: 30px;
+    }
+
+    i {
+      font-weight: normal;
+      line-height: 2;
+    }
+  }
+
+  .privacyPolicy__scope, .privacyPolicy__contactUs{
+      h1{
+          margin-top: 40px;
+          margin-bottom: 20px;
+      }
+      p{
+          font-weight: normal;
+          line-height: 2;
+      }
+
+      ul{
+          font-weight: normal;
+          list-style: none;
+          margin-top: 20px;
+          line-height: 2;
+          margin-bottom: 40px;
+      }
+  }
+}

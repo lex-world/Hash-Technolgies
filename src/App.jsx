@@ -17,6 +17,7 @@ import Footer from "./Components/Footer/Footer";
  * @pages
  */
 import Home from "./Pages/Home/Home";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 
 const location = new ReactLocation();
 
@@ -30,10 +31,10 @@ export default function App() {
             path: "/",
             element: <Home />,
           },
-          // {
-          //   path: "/about",
-          //   element: <Home />,
-          // },
+          {
+            path: "/privacy-policy",
+            element: <PrivacyPolicy />,
+          },
         ]}
       />
       <Footer/>
