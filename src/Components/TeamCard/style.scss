@@ -1,10 +1,18 @@
 .TeamCard__container {
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 80px;
   transition: all 0.3s ease;
   padding: 35px 25px;
+
+  @media (max-width: 1200px) {
+    margin-top: 70px;
+    box-shadow: 0 0 2px 0 rgba(145, 158, 171, 0.24),
+      0 16px 32px -4px rgba(145, 158, 171, 0.24);
+    border-radius: 14px;
+  }
 
   img {
     border-radius: 50%;
@@ -31,6 +39,13 @@
   p {
     width: 22vw;
     font-size: 16px;
+
+    @media (max-width: 1200px){
+      width: 70vw;
+    }
+    @media (max-width: 768px){
+      width: 70vw;
+    }
   }
 
   ul {

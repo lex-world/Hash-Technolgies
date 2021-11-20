@@ -37,7 +37,11 @@ export default function Home() {
        * @section => banner
        */}
       <div className="home__container__landingBanner">
-        <div>
+        <div className="home__container__landingBanner__small">
+          <img src={BannerImage} alt="banner" />
+        </div>
+
+        <div className="home__container__landing__content">
           <h1>Building the Decentralized Future & World.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, esse
@@ -45,7 +49,10 @@ export default function Home() {
             fugiat, quisquam earum voluptate veritatis itaque.
           </p>
         </div>
-        <img src={BannerImage} alt="banner" />
+
+        <div className="home__container__landingBanner__large">
+          <img src={BannerImage} alt="banner" />
+        </div>
       </div>
 
       {/**
@@ -64,6 +71,7 @@ export default function Home() {
             the rate of change brought on by the internet.
           </p>
         </div>
+
         <div>
           <img src={SVisual2} alt="visual" />
           <h1>Decentralized Systems</h1>
@@ -84,7 +92,9 @@ export default function Home() {
        */}
       <div className="home__container__ourWork">
         <div className="home__container__ourWork__workItem">
-          <img src="https://edgeandnode.com/images/thegraph2.jpg" alt="" />
+          <div>
+            <img src="https://edgeandnode.com/images/thegraph2.jpg" alt="" />
+          </div>
           <div className="home__container__ourWork__workItem__content">
             <span>Our Work</span>
             <h1>Hami Nepal</h1>
@@ -119,7 +129,9 @@ export default function Home() {
             </p>
             <Link>swasthysamriddhicard.com</Link>
           </div>
+          <div>
           <img src="https://edgeandnode.com/images/everest2.jpg" alt="" />
+          </div>
         </div>
       </div>
 
