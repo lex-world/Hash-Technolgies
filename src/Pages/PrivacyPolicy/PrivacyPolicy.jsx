@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
  * @components
  */
 import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 export default function PrivacyPolicy() {
   return (
@@ -77,6 +78,7 @@ export default function PrivacyPolicy() {
           <li><b>legal@hashtechnologies.net</b></li>
         </ul>
       </div>
+      <Footer />
     </div>
   );
 }

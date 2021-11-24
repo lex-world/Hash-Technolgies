@@ -20,6 +20,7 @@ import SVisual2 from "../../Assets/small-visual2.png";
  */
 import Navbar from "../../Components/Navbar/Navbar";
 import TeamCard from "../../Components/TeamCard/TeamCard";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -167,6 +168,7 @@ export default function Home() {
         </p>
         <Link>View Jobs</Link>
       </div>
+      <Footer />
     </div>
   );
 }
