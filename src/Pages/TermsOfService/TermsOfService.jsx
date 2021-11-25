@@ -1,24 +1,18 @@
 import React from "react";
 import "./style.scss";
 
-/**
- * @packages
- */
-import { Helmet } from "react-helmet";
-
-/**
- * @components
- */
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 
-export default function PrivacyPolicy() {
+import { Helmet } from "react-helmet";
+
+export default function TermsOfService() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
-    <div className="privacyPolicy__container">
+    <div className="termsOfService__container">
       <Helmet>
         <title>Hash Technologies</title>
       </Helmet>
@@ -31,8 +25,8 @@ export default function PrivacyPolicy() {
       {/**
        * @section => header
        */}
-      <div className="privacyPolicy__header">
-        <h1>Privacy Policy</h1>
+      <div className="termsOfService__container__header">
+        <h1>Terms of Service</h1>
         <div className="lastUpdated">Last updated</div>
         <div className="date">July 05, 2021</div>
 
@@ -47,25 +41,9 @@ export default function PrivacyPolicy() {
       </div>
 
       {/**
-       * @section => scope
-       */}
-      <div className="privacyPolicy__scope">
-        <h1>Scope</h1>
-
-        <p>
-          Edge & Node Ventures, Inc. (together, “Edge & Node,” “we,” “us,” or
-          “our”) is a software development company that creates and supports
-          protocols and dApps that are building the decentralized future. This
-          Privacy Notice is designed to help you understand how we collect, use,
-          and share your personal information, and to help you understand and
-          exercise your privacy rights.
-        </p>
-      </div>
-
-      {/**
        * @section => contactUs
        */}
-      <div className="privacyPolicy__contactUs">
+      <div className="termsOfService__container__contactUs">
         <h1>Contact Us</h1>
 
         <p>
@@ -79,9 +57,15 @@ export default function PrivacyPolicy() {
           <li>Jahada Road, Hash Tower, Traffic Chowk</li>
           <li>Biratnagar, Nepal +9779849092326</li>
           <li>Hash Technologies</li>
-          <li><b>legal@hashtechnologies.net</b></li>
+          <li>
+            <b>legal@hashtechnologies.net</b>
+          </li>
         </ul>
       </div>
+
+      {/**
+       * @section => footer
+       */}
       <Footer />
     </div>
   );

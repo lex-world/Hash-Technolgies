@@ -1,5 +1,5 @@
 .footer__container {
-  padding: 24px 80px;
+  padding: 24px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,6 +24,15 @@
       margin-right: 20px;
       font-weight: 500;
       color: #7a7a7a;
+      
+      a{
+        color: #7a7a7a;
+        text-decoration: none;
+
+        &:hover {
+          color: #7a7a7a;
+        }
+      }
     }
   }
 }

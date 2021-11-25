@@ -23,6 +23,10 @@ import TeamCard from "../../Components/TeamCard/TeamCard";
 import Footer from "../../Components/Footer/Footer";
 
 export default function Home() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="home__container">
       <Helmet>

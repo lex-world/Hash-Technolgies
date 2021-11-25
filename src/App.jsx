@@ -13,6 +13,7 @@ import {
  */
 import Home from "./Pages/Home/Home";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
+import TermsOfService from "./Pages/TermsOfService/TermsOfService";
 
 const location = new ReactLocation();
 
@@ -29,6 +30,10 @@ export default function App() {
           {
             path: "/privacy-policy",
             element: <PrivacyPolicy />,
+          },
+          {
+            path: "/terms",
+            element: <TermsOfService />,
           },
         ]}
       />
