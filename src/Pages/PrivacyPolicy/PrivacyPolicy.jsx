@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
   return (
     <div className="privacyPolicy__container">
       <Helmet>
-        <title>Hash Technologies</title>
+        <title>Privacy Policy | Hash Technologies</title>
       </Helmet>
 
       {/**

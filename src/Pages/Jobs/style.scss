@@ -1,0 +1,100 @@
+.jobs__container {
+  .additional-padding {
+    padding: 0 80px;
+
+    @media (max-width: 1280px) {
+      padding: 0 24px;
+    }
+  }
+
+  .jobs__container__title {
+    margin-top: 10vh;
+    font-size: 55px;
+    line-height: 1.2;
+    color: #171f3a;
+
+    padding: 0 80px;
+
+    @media (max-width: 1280px) {
+      padding: 0 24px;
+    }
+  }
+
+  .jobs__container__introContent {
+    list-style: none;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+
+    @media (max-width: 1280px) {
+      padding: 0 24px;
+      flex-direction: column;
+    }
+
+    li {
+      padding: 0 40px;
+
+      @media (max-width: 1280px) {
+        margin-top: 40px;
+      }
+
+      &:nth-child(2) {
+        border-left: 0.5px solid rgb(206, 206, 206);
+        border-right: 0.5px solid rgb(206, 206, 206);
+      }
+
+      h3 {
+        margin-bottom: 53px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: "Raleway", sans-serif;
+      }
+
+      p {
+        line-height: 28px;
+        color: #5a5a5a;
+        font-family: "Raleway", sans-serif;
+      }
+    }
+  }
+
+  .jobs__container__jobs {
+    margin-top: 80px;
+    padding: 80px;
+    background: linear-gradient(rgba(235, 224, 225, 0.493) 0%, rgba(231, 213, 215, 0) 100%);
+    // opacity: 0.32;
+    @media (max-width: 1280px) {
+      padding: 80px 24px;
+    }
+
+    .jobs__container__jobs__title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    p {
+      font-weight: 400;
+      color: #434140;
+      font-family: "Raleway", sans-serif;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .jobs__container__jobs__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        margin-top: 0;
+      }
+    }
+  }
+}

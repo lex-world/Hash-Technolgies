@@ -12,6 +12,7 @@ import {
  * @pages
  */
 import Home from "./Pages/Home/Home";
+import Jobs from "./Pages/Jobs/Jobs";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 import TermsOfService from "./Pages/TermsOfService/TermsOfService";
 
@@ -34,6 +35,10 @@ export default function App() {
           {
             path: "/terms",
             element: <TermsOfService />,
+          },
+          {
+            path: "/jobs",
+            element: <Jobs />,
           },
         ]}
       />

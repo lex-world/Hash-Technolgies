@@ -9,7 +9,9 @@ export default function Footer() {
         <li style={{ color: "#17203e", fontWeight: "600" }}>
           Hash Technologies
         </li>
-        <li>Jobs</li>
+        <li>
+          <Link to="/jobs">Jobs</Link>
+        </li>
         <li>
           <Link to="/privacy-policy">Privacy Policy</Link>
         </li>

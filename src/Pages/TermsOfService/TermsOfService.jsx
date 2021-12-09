@@ -14,7 +14,7 @@ export default function TermsOfService() {
   return (
     <div className="termsOfService__container">
       <Helmet>
-        <title>Hash Technologies</title>
+        <title>Terms of Services | Hash Technologies</title>
       </Helmet>
 
       {/**
