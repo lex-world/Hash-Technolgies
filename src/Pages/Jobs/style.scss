@@ -91,6 +91,15 @@
       flex-wrap: wrap;
       align-items: center;
 
+      a{
+        text-decoration: none;
+        color: #434140;
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
       @media (max-width: 768px) {
         flex-direction: column;
         margin-top: 0;

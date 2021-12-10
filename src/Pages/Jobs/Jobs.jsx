@@ -5,6 +5,7 @@ import "./style.scss";
  * @packages
  */
 import { Helmet } from "react-helmet";
+import { Link } from "react-location";
 
 /**
  * @components
@@ -73,7 +74,7 @@ export default function Jobs() {
 
         <div className="jobs__container__jobs__list">
           {JobList.map((job, index) => (
-            <JobsCard key={index} category={job.category} title={job.title} />
+            <Link key={index} to="/job/?id=1234"><JobsCard category={job.category} title={job.title} /></Link>
           ))}
         </div>
       </div>
