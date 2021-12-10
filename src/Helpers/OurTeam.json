@@ -1,0 +1,146 @@
+[
+    {
+        "image": "https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/laxman-vp.jpg",
+        "name": "Laxman Rai",
+        "position": "Co-Founder, Vice President of Operations",
+        "quote": "",
+        "socialLinks": [
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/himitsu.fushigi_/"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/lex-world"
+            },
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/lexworld_"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/profile.php?id=100075313974997"
+            }
+        ]
+    },
+    {
+        "image": "https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/sudeep-co.jpg",
+        "name": "Sudeep Mishra",
+        "position": "Co-Founder, Full Stack Developer",
+        "quote": "",
+        "socialLinks": [
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/himitsu.fushigi_/"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/lex-world"
+            },
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/lexworld_"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/profile.php?id=100075313974997"
+            }
+        ]
+    },
+    {
+        "image": "https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/sweta-hr.jpg",
+        "name": "Sweta Maskey",
+        "position": "Human Resource Manager",
+        "quote": "",
+        "socialLinks": [
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/himitsu.fushigi_/"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/lex-world"
+            },
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/lexworld_"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/profile.php?id=100075313974997"
+            }
+        ]
+    },
+    {
+        "image": "../../Assets/laxman-vp.jpg",
+        "name": "Anil Chaudhary",
+        "position": "Head of Finance",
+        "quote": "",
+        "socialLinks": [
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/himitsu.fushigi_/"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/lex-world"
+            },
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/lexworld_"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/profile.php?id=100075313974997"
+            }
+        ]
+    },
+    {
+        "image": "https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/gaurav-hp.jpg",
+        "name": "Gaurav Thapa",
+        "position": "Head of Operations",
+        "quote": "",
+        "socialLinks": [
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/himitsu.fushigi_/"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/lex-world"
+            },
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/lexworld_"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/profile.php?id=100075313974997"
+            }
+        ]
+    },
+    {
+        "image": "https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/neeshu-mkt.jpg",
+        "name": "Nishu Karna",
+        "position": "Head of Digital Marketing",
+        "quote": "",
+        "socialLinks": [
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/himitsu.fushigi_/"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/lex-world"
+            },
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/lexworld_"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/profile.php?id=100075313974997"
+            }
+        ]
+    }
+]

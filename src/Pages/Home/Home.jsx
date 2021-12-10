@@ -22,6 +22,11 @@ import Navbar from "../../Components/Navbar/Navbar";
 import TeamCard from "../../Components/TeamCard/TeamCard";
 import Footer from "../../Components/Footer/Footer";
 
+/**
+ * @helpers
+ */
+import Teams from '../../Helpers/OurTeam.json';
+
 export default function Home() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -152,12 +157,7 @@ export default function Home() {
         </p>
 
         <div className="home__container__ourTeam__teams">
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
-          <TeamCard />
+          {Teams.map((team, index) => (<TeamCard key={index} team={team} />))}
         </div>
       </div>
 
