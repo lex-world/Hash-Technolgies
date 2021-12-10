@@ -5,7 +5,6 @@ import "./style.scss";
  * @packages
  */
 import { Helmet } from "react-helmet";
-import { Link } from "react-location";
 
 /**
  * @components
@@ -139,7 +138,11 @@ export default function JobsFocused() {
       </div>
 
       <div className="jobsFocused__container__btn">
-      <Link>Apply Now</Link>
+        <a href={`https://mail.google.com/mail/?view=cm&to=${
+            process.env.REACT_APP_HR
+          }&su=${"Titlte of Job"}&body=Attach your CV here.`} target="_blank" rel="noreferrer">
+          Apply Now
+        </a>
       </div>
 
       <div className="padding">
