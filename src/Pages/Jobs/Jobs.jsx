@@ -1,10 +1,16 @@
 import React from "react";
 import "./style.scss";
 
+/**
+ * @packages
+ */
 import { Helmet } from "react-helmet";
+
+/**
+ * @components
+ */
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-
 import JobList from "../../Helpers/Jobs.json";
 import JobsCard from "../../Components/JobsCard/JobsCard";
 
@@ -22,9 +28,9 @@ export default function Jobs() {
       {/**
        * @section => navbar
        */}
-       <div className="additional-padding">
-      <Navbar/>
-       </div>
+      <div className="additional-padding">
+        <Navbar />
+      </div>
 
       <h1 className="jobs__container__title">Working at Hash Technologies</h1>
 
@@ -66,15 +72,15 @@ export default function Jobs() {
         </p>
 
         <div className="jobs__container__jobs__list">
-            {JobList.map((job, index) => (
-              <JobsCard key={index} category={job.category} title={job.title} />
-            ))}
+          {JobList.map((job, index) => (
+            <JobsCard key={index} category={job.category} title={job.title} />
+          ))}
         </div>
       </div>
 
-<div className="additional-padding">
-<Footer/>
-</div>
+      <div className="additional-padding">
+        <Footer />
+      </div>
     </div>
   );
 }

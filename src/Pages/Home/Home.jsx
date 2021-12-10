@@ -170,7 +170,7 @@ export default function Home() {
           Join Edge & Node to help build the decentralized future and scale
           human coordination on the internet.
         </p>
-        <Link>View Jobs</Link>
+        <Link to="/jobs">View Jobs</Link>
       </div>
       <Footer />
     </div>

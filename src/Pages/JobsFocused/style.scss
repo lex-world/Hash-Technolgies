@@ -1,0 +1,118 @@
+.jobsFocused__container {
+  .jobsFocused__container__landing {
+    background: #edeceb;
+    padding: 0 80px;
+    padding-bottom: 40px;
+
+    @media (max-width: 1280px) {
+      padding: 0 24px;
+    }
+
+    ul {
+      max-width: 55vw;
+      margin: 64px auto 40px auto;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      @media (max-width: 1280px) {
+        max-width: 100vw;
+      }
+
+      .light,
+      .bold {
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.75;
+        font-size: 15px;
+        font-family: "Raleway", sans-serif;
+      }
+
+      .light {
+        color: #9a9a9a;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 55px;
+      margin-bottom: 80px;
+      color: #16203f;
+    }
+  }
+
+  .jobsFocused__container__summary,
+  .jobsFocused__container__responsibilities,
+  .jobsFocused__container__skills,
+  .jobsFocused__container__recommended {
+    padding: 80px 200px 0 200px;
+    font-size: 18px;
+    color: #6a6a6a;
+
+    @media (max-width: 1280px) {
+      padding: 0 24px;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-family: "Raleway", sans-serif;
+      color: #16203f;
+    }
+
+    p {
+      line-height: 2.25;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 10px 0;
+        margin: 25px 0;
+        padding-left: 40px;
+        border-left: 0.5px solid #9a9a9a;
+      }
+    }
+  }
+
+  .jobsFocused__container__recommended {
+    margin-bottom: 80px;
+  }
+
+  .jobsFocused__container__btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    a{
+      text-align: center;
+    text-decoration: none;
+    color: #434140;
+    line-height: 1.8;
+    font-weight: 600;
+    border-left: 3px solid #17203e;
+    border-right: 3px solid #17203e;
+    padding: 10px 20px;
+    font-family: "Raleway", sans-serif;
+    transition: all 0.3s ease;
+    font-size: 18px;
+
+    &:hover {
+      color: #185f7d;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-color: #185f7d;
+    }
+    }
+  }
+
+  .padding {
+    padding: 0 80px;
+
+    @media (max-width: 1280px) {
+      padding: 0 24px;
+    }
+  }
+}

@@ -13,6 +13,7 @@ import {
  */
 import Home from "./Pages/Home/Home";
 import Jobs from "./Pages/Jobs/Jobs";
+import JobsFocused from "./Pages/JobsFocused/JobsFocused";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 import TermsOfService from "./Pages/TermsOfService/TermsOfService";
 
@@ -39,6 +40,10 @@ export default function App() {
           {
             path: "/jobs",
             element: <Jobs />,
+          },
+          {
+            path: "/job",
+            element: <JobsFocused />,
           },
         ]}
       />
