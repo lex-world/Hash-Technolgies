@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 
 export default function TeamCard({team}) {
-  const {image, name, position} = team;
+  const {image, name, position, quote} = team;
   // const {image, name, position, quote, socialLinks} = team;
 
   return (
@@ -14,10 +14,7 @@ export default function TeamCard({team}) {
       <h2>{name}</h2>
       <h3>{position}</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, optio
-        voluptatum, asperiores nobis nam quam commodi sit totam ratione
-        molestias inventore soluta eum excepturi corrupti vero labore
-        consequatur velit est.
+        {quote}
       </p>
       {/* <ul className="social__links">
         <li>

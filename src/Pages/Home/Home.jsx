@@ -25,13 +25,13 @@ import Footer from "../../Components/Footer/Footer";
 /**
  * @helpers
  */
-import Teams from '../../Helpers/OurTeam.json';
+import Teams from "../../Helpers/OurTeam.json";
 
 export default function Home() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div className="home__container">
       <Helmet>
@@ -52,11 +52,11 @@ export default function Home() {
         </div>
 
         <div className="home__container__landing__content">
-          <h1>Building the Decentralized Future & World.</h1>
+          <h1>Building the Ideas for Future & World.</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, esse
-            nesciunt incidunt deserunt quos atque veniam? Suscipit error sint
-            fugiat, quisquam earum voluptate veritatis itaque.
+            We primarily prioritize the new project ideas for new generation for
+            the better results. We strive to make daily life better, convenient
+            and secure through our skills and knowledge.
           </p>
         </div>
 
@@ -73,26 +73,23 @@ export default function Home() {
           <img src={SVisual1} alt="visual" />
           <h1>Recognizing the past</h1>
           <p>
-            Modern society has evolved over the past two hundred years around
-            Industrial Age institutions. Banks, Corporations, Universities, and
-            Governments have been the predominent means of scaling human
-            coordination. Capitalism has created a tremendous amount of wealth
-            around the world but institutions have not been able to keep up with
-            the rate of change brought on by the internet.
+            Banks, Corporations, Universities, and Governments have been the
+            predominent means of scaling human coordination. Capitalism has
+            created a tremendous amount of wealth around the world but
+            institutions have not been able to keep up with the rate of change
+            brought on by the internet.
           </p>
         </div>
 
         <div>
           <img src={SVisual2} alt="visual" />
-          <h1>Decentralized Systems</h1>
+          <h1>Using technology for better life</h1>
           <p>
-            Protocols are internet native instutions that are open and
-            transparent, and can be used to coordinate large numbers of people.
-            Using crypto, we can rethink what it means to be an effective
-            individual in the Internet Age. How we spend our time, what we
-            value, the way we distribute resources, the big audacious goals we
-            take on—it’s all up for grabs. This is our time to dream big, work
-            hard, and create the future we want to live in.
+            Things like social media, informations and technology has their own
+            pros and cons but being optimistic team. We focus more on pros than
+            cons. There are endless possibilities to make lives better using
+            them and we from Hash Technologies welcomes your new project ideas
+            for good.
           </p>
         </div>
       </div>
@@ -103,44 +100,74 @@ export default function Home() {
       <div className="home__container__ourWork">
         <div className="home__container__ourWork__workItem">
           <div>
-            <img src="https://edgeandnode.com/images/thegraph2.jpg" alt="" />
+            <img
+              src="https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/haminepal.jpg"
+              alt="Hami Nepal"
+            />
           </div>
           <div className="home__container__ourWork__workItem__content">
             <span>Our Work</span>
             <h1>Hami Nepal</h1>
             <p className="highlight">
-              An indexing protocol for organizing blockchain data and making it
-              easily accessible.
+              Hami Nepal runs on a no-fee basis, with all volunteers donating
+              their time and effort, which motivates Hami Nepal's team to work
+              and achieve more for the people.
             </p>
             <p>
-              What Google does for the web, The Graph does for blockchains. A
-              decentralized network ensures that open data is always available
-              and easy to access. The Graph is used by thousands of protocols
-              and dApps like Uniswap, Synthetix, Aave, Balancer, Zora,
-              Foundation, and more.
+              Hami Nepal is a non-profit organisation, established in 2015 A.D.
+              and registered in 2020 A.D. (Regd.no. 609789065), which directly
+              connects the donors and the recipients. Our main objective is to
+              help anyone in need without any hesitations and expectation of
+              payback.
             </p>
-            <Link>haminepal.org</Link>
+            <a href="https://haminepal.org" target="_blank" rel="noreferrer">
+              haminepal.org
+            </a>
           </div>
         </div>
         <div className="home__container__ourWork__workItem second">
           <div className="home__container__ourWork__workItem__content">
             <span>Our Work</span>
-            <h1>Swasthay Samriddhi Card</h1>
-            <p>
-              An indexing protocol for organizing blockchain data and making it
-              easily accessible.
+            <h1>Thrift My Outfit</h1>
+            <p className="highlight">
+              Thrift My Outfit mainly focuses on normalizing thrifted outfits
+              like we use thrifted gadgets, digital goods etc.
             </p>
             <p>
-              What Google does for the web, The Graph does for blockchains. A
-              decentralized network ensures that open data is always available
-              and easy to access. The Graph is used by thousands of protocols
-              and dApps like Uniswap, Synthetix, Aave, Balancer, Zora,
-              Foundation, and more.
+              Thrift My Outfit is a organization which helps outfit thrifts to
+              collab with other vendors and circle out same items since
+              marketing is not cheap, TMO helps every level of thrift owners to
+              sell their items.
             </p>
-            <Link>swasthysamriddhicard.com</Link>
+            <a href="https://thriftmyoutfit.com" target="_blank" rel="noreferrer">thriftmyoutfit.com</a>
           </div>
           <div>
-          <img src="https://edgeandnode.com/images/everest2.jpg" alt="" />
+            <img
+              src="https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/thriftmyoutfit.jpg"
+              alt="thriftmyoutfit"
+            />
+          </div>
+        </div>
+        <div className="home__container__ourWork__workItem">
+          <div>
+            <img
+              src="https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/tbs.jpg"
+              alt="The Boring School"
+            />
+          </div>
+          <div className="home__container__ourWork__workItem__content">
+            <span>Our Work</span>
+            <h1>The Boring School</h1>
+            <p className="highlight">
+              The Boring School in short TBS is a platform for IT students to
+              hone their technological skills by solving real world puzzles.
+            </p>
+            <p>
+              The Boring School not just only aims to provide courses to develop the skills but also serves podcast, discussions and blog which is yet not completed but under development.
+            </p>
+            <a href="https://theboringschool.org" target="_blank" rel="noreferrer">
+              theboringschool.org
+            </a>
           </div>
         </div>
       </div>
@@ -157,7 +184,9 @@ export default function Home() {
         </p>
 
         <div className="home__container__ourTeam__teams">
-          {Teams.map((team, index) => (<TeamCard key={index} team={team} />))}
+          {Teams.map((team, index) => (
+            <TeamCard key={index} team={team} />
+          ))}
         </div>
       </div>
 
@@ -167,7 +196,7 @@ export default function Home() {
       <div className="home__container__teamExpansion">
         <h1>We are expanding!</h1>
         <p>
-          Join Edge & Node to help build the decentralized future and scale
+          Join Hash Technologies to help build the decentralized future and scale
           human coordination on the internet.
         </p>
         <Link to="/jobs">View Jobs</Link>

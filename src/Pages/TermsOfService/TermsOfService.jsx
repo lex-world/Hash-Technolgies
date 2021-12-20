@@ -31,12 +31,12 @@ export default function TermsOfService() {
         <div className="date">July 05, 2021</div>
 
         <i>
-          Edge & Node Ventures, Inc. (together, “Edge & Node,” “we,” “us,” or
+          Hash Technologies (together, “Hash Technologies,” “we,” “us,” or
           “our”) is a software development company that creates and supports
-          protocols and dApps that are building the decentralized future. This
-          Privacy Notice is designed to help you understand how we collect, use,
-          and share your personal information, and to help you understand and
-          exercise your privacy rights.
+          protocols and apps that are building the future. This Privacy Notice
+          is designed to help you understand how we collect, use, and share your
+          personal information, and to help you understand and exercise your
+          privacy rights.
         </i>
       </div>
 

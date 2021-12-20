@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div className="privacyPolicy__container">
       <Helmet>
@@ -37,12 +37,12 @@ export default function PrivacyPolicy() {
         <div className="date">July 05, 2021</div>
 
         <i>
-          Edge & Node Ventures, Inc. (together, “Edge & Node,” “we,” “us,” or
+          Hash Technologies (together, “Hash Technologies,” “we,” “us,” or
           “our”) is a software development company that creates and supports
-          protocols and dApps that are building the decentralized future. This
-          Privacy Notice is designed to help you understand how we collect, use,
-          and share your personal information, and to help you understand and
-          exercise your privacy rights.
+          protocols and apps that are building the future. This Privacy Notice
+          is designed to help you understand how we collect, use, and share your
+          personal information, and to help you understand and exercise your
+          privacy rights.
         </i>
       </div>
 
@@ -53,12 +53,12 @@ export default function PrivacyPolicy() {
         <h1>Scope</h1>
 
         <p>
-          Edge & Node Ventures, Inc. (together, “Edge & Node,” “we,” “us,” or
-          “our”) is a software development company that creates and supports
-          protocols and dApps that are building the decentralized future. This
-          Privacy Notice is designed to help you understand how we collect, use,
-          and share your personal information, and to help you understand and
-          exercise your privacy rights.
+          For this version of our Progressive Web Application (PWA) we do not
+          collect any of our site visitors information. And, we intend not to in
+          future as well. We primarily focus on encrypting our own data, as well as
+          in any case you need to post information to us, it won't be direct
+          method so, we're refusing to collect information for this
+          version.
         </p>
       </div>
 
@@ -79,7 +79,9 @@ export default function PrivacyPolicy() {
           <li>Jahada Road, Hash Tower, Traffic Chowk</li>
           <li>Biratnagar, Nepal +9779849092326</li>
           <li>Hash Technologies</li>
-          <li><b>legal@hashtechnologies.net</b></li>
+          <li>
+            <b>legal@hashtechnologies.net</b>
+          </li>
         </ul>
       </div>
       <Footer />

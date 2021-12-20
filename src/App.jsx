@@ -44,7 +44,7 @@ export default function App() {
           {
             path: "/job",
             element: <JobsFocused />,
-          },
+          }
         ]}
       />
     </>
