@@ -12,15 +12,20 @@ import { Helmet } from "react-helmet";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 
-export default function JobsFocused() {
+import JobList from '../../Helpers/Jobs.json';
+
+export default function JobsFocused(props) {
+  const [jobItem, setJobItem] = React.useState();
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
+    setJobItem(JobList[parseInt(localStorage.getItem("job"))])
   }, []);
   
   return (
     <div className="jobsFocused__container">
       <Helmet>
-        <title>Software Engineer | Hash Technologies</title>
+        <title>Apply for Job | Hash Technologies</title>
       </Helmet>
 
       {/** @section landing */}
@@ -30,36 +35,30 @@ export default function JobsFocused() {
         <ul>
           <li>
             <p className="light">Employement Type</p>
-            <p className="bold">Full-Time</p>
+            <p className="bold">{jobItem?.details?.employment_type}</p>
           </li>
           <li>
             <p className="light">Years of Experience</p>
-            <p className="bold">3+</p>
+            <p className="bold">{jobItem?.details?.experience}</p>
           </li>
           <li>
             <p className="light">Location</p>
-            <p className="bold">Remote</p>
+            <p className="bold">{jobItem?.details?.location}</p>
           </li>
           <li>
             <p className="light">Team Lead</p>
-            <p className="bold">Laxman Rai</p>
+            <p className="bold">{jobItem?.details?.team_lead}</p>
           </li>
         </ul>
 
-        <h1>Software Engineer</h1>
+        <h1>{jobItem?.title}</h1>
       </div>
 
       {/** @section summary */}
       <div className="jobsFocused__container__summary">
         <h1>What We’re Looking For</h1>
         <p>
-          To grow our Smart Contracts team, we are looking for an experienced,
-          self-driven Senior Software Engineer interested in working on the
-          Graph Network. Designed entirely by the team, it combines several
-          crypto-economic mechanisms such as curation with bonding curves,
-          staking, delegation, slashing, and rewards distribution. The team is
-          responsible for keeping the network contracts safe and pushing the
-          tech further to advance the space.
+          {jobItem?.details?.what_we_are_looking_for}
         </p>
       </div>
 
@@ -68,22 +67,11 @@ export default function JobsFocused() {
         <h1>Responsibilities</h1>
 
         <ul>
-          <li>
-            Design, code, test and deploy smart contracts of The Graph Network.
-          </li>
-          <li>Review code written by other team members.</li>
-          <li>
-            Collaborate with auditors to ensure code quality standards and
-            security.
-          </li>
-          <li>
-            Build back-end web services that interact with the Ethereum
-            blockchain.
-          </li>
-          <li>
-            Write scripts to automate monitoring and tracking to maintain the
-            overall network health.
-          </li>
+          {jobItem?.details?.responsibilites?.map((item, index) => (
+            <li key={index}>
+              <p>{item}</p>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -92,23 +80,11 @@ export default function JobsFocused() {
         <h1>Desired skills</h1>
 
         <ul>
-          <li>
-            Experience in creating and maintaining low-level software systems
-            and working on a constrained development environment.
-          </li>
-          <li>
-            An interest in the intersection of law, economic systems and
-            software.
-          </li>
-          <li>Attention to detail and a security-oriented mindset.</li>
-          <li>
-            Comfortable with a scripting language for task automation,
-            preferably Typescript or Python.
-          </li>
-          <li>
-            Have a collaborative, problem-solving attitude and be willing to
-            help other team members.
-          </li>
+        {jobItem?.details?.desired_skills?.map((item, index) => (
+            <li key={index}>
+              <p>{item}</p>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -121,30 +97,18 @@ export default function JobsFocused() {
           building and getting deep into building blockchain applications.
         </p>
         <ul>
-          <li>
-            Experience in creating and maintaining low-level software systems
-            and working on a constrained development environment.
-          </li>
-          <li>
-            An interest in the intersection of law, economic systems and
-            software.
-          </li>
-          <li>Attention to detail and a security-oriented mindset.</li>
-          <li>
-            Comfortable with a scripting language for task automation,
-            preferably Typescript or Python.
-          </li>
-          <li>
-            Have a collaborative, problem-solving attitude and be willing to
-            help other team members.
-          </li>
+        {jobItem?.details?.recommended?.map((item, index) => (
+            <li key={index}>
+              <p>{item}</p>
+            </li>
+          ))}
         </ul>
       </div>
 
       <div className="jobsFocused__container__btn">
         <a href={`https://mail.google.com/mail/?view=cm&to=${
             process.env.REACT_APP_HR
-          }&su=${"Titlte of Job"}&body=Attach your CV here.`} target="_blank" rel="noreferrer">
+          }&su=${`Application for ${jobItem?.title}`}&body=Attach your CV here.`} target="_blank" rel="noreferrer">
           Apply Now
         </a>
       </div>

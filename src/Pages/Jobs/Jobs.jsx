@@ -5,15 +5,15 @@ import "./style.scss";
  * @packages
  */
 import { Helmet } from "react-helmet";
-// import { Link } from "react-location";
+import { Link } from "react-location";
 
 /**
  * @components
  */
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-// import JobList from "../../Helpers/Jobs.json";
-// import JobsCard from "../../Components/JobsCard/JobsCard";
+import JobList from "../../Helpers/Jobs.json";
+import JobsCard from "../../Components/JobsCard/JobsCard";
 
 export default function Jobs() {
   React.useEffect(() => {
@@ -72,15 +72,17 @@ export default function Jobs() {
           motivated, and kind humans.
         </p>
 
-        <h1 style={{textAlign: 'center'}}>
+        {/* <h1 style={{textAlign: 'center'}}>
           Currently, there are none open positions, keep updated with us to join
           for future open positions 😇.
-        </h1>
-        {/* <div className="jobs__container__jobs__list">
+        </h1> */}
+        <div className="jobs__container__jobs__list">
           {JobList.map((job, index) => (
-            <Link key={index} to="/job/?id=1234"><JobsCard category={job.category} title={job.title} /></Link>
+            <Link key={index} to="/job" onClick={() => localStorage.setItem("job", index)}>
+              <JobsCard item={index} category={job.category} title={job.title} />
+            </Link>
           ))}
-        </div> */}
+        </div>
       </div>
 
       <div className="additional-padding">

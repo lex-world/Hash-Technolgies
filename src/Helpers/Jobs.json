@@ -1,34 +1,101 @@
 [
     {
         "category": "Engineering",
-        "title": "Solidity Engineer"
+        "title": "Native Mobile App Developer",
+        "details": {
+            "employment_type": "Full-Time",
+            "experience": 3,
+            "location": "Remote",
+            "team_lead": "Sudeep Mishra",
+            "what_we_are_looking_for": "To grow our Smart Contracts team, we are looking for an experienced, self-driven Senior Software Engineer interested in working on the Graph Network. Designed entirely by the team, it combines several crypto-economic mechanisms such as curation with bonding curves, staking, delegation, slashing, and rewards distribution. The team is responsible for keeping the network contracts safe and pushing the tech further to advance the space.",
+            "responsibilites": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ],
+            "desired_skills": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ],
+            "recommended": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ]
+            
+        }
     },
     {
         "category": "Engineering",
-        "title": "Software Engineer"
+        "title": "Graphic Designer",
+        "details": {
+            "employment_type": "Full-Time",
+            "experience": 3,
+            "location": "Remote",
+            "team_lead": "Nishu Karna",
+            "what_we_are_looking_for": "To grow our Smart Contracts team, we are looking for an experienced, self-driven Senior Software Engineer interested in working on the Graph Network. Designed entirely by the team, it combines several crypto-economic mechanisms such as curation with bonding curves, staking, delegation, slashing, and rewards distribution. The team is responsible for keeping the network contracts safe and pushing the tech further to advance the space.",
+            "responsibilites": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ],
+            "desired_skills": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ],
+            "recommended": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ]
+            
+        }
     },
     {
         "category": "Engineering",
-        "title": "Solidity Engineer"
-    },
-    {
-        "category": "Engineering",
-        "title": "Software Engineer"
-    },
-    {
-        "category": "Engineering",
-        "title": "Solidity Engineer"
-    },
-    {
-        "category": "Engineering",
-        "title": "Software Engineer"
-    },
-    {
-        "category": "Engineering",
-        "title": "Solidity Engineer"
-    },
-    {
-        "category": "Engineering",
-        "title": "Rust Engineer"
+        "title": "Content Writer",
+        "details": {
+            "employment_type": "Full-Time",
+            "experience": 3,
+            "location": "Remote",
+            "team_lead": "Nishu Karna",
+            "what_we_are_looking_for": "To grow our Smart Contracts team, we are looking for an experienced, self-driven Senior Software Engineer interested in working on the Graph Network. Designed entirely by the team, it combines several crypto-economic mechanisms such as curation with bonding curves, staking, delegation, slashing, and rewards distribution. The team is responsible for keeping the network contracts safe and pushing the tech further to advance the space.",
+            "responsibilites": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ],
+            "desired_skills": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ],
+            "recommended": [
+                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "Review code written by other team members.",
+                "Collaborate with auditors to ensure code quality standards and security.",
+                "Build back-end web services that interact with the Ethereum blockchain.",
+                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+            ]
+            
+        }
     }
 ]
