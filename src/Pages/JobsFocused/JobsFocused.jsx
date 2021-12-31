@@ -92,10 +92,6 @@ export default function JobsFocused(props) {
       <div className="jobsFocused__container__recommended">
         <h1>Strongly Recommended</h1>
 
-        <p>
-          We are looking for a Senior Software Engineer that is interested in
-          building and getting deep into building blockchain applications.
-        </p>
         <ul>
         {jobItem?.details?.recommended?.map((item, index) => (
             <li key={index}>
