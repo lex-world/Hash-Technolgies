@@ -7,27 +7,31 @@
             "experience": 3,
             "location": "Remote",
             "team_lead": "Sudeep Mishra",
-            "what_we_are_looking_for": "To grow our Smart Contracts team, we are looking for an experienced, self-driven Senior Software Engineer interested in working on the Graph Network. Designed entirely by the team, it combines several crypto-economic mechanisms such as curation with bonding curves, staking, delegation, slashing, and rewards distribution. The team is responsible for keeping the network contracts safe and pushing the tech further to advance the space.",
+            "what_we_are_looking_for": "We are looking for a qualified Native Mobile Application developer to join our Engineering team. You will be working with our engineers to develop and maintain high quality mobile applications. If you’re passionate about mobile platforms and translating code into user-friendly apps, we would like to meet you. As a Native Mobile App developer, you’ll collaborate with internal teams to develop functional mobile applications, while working in a fast-paced environment.",
             "responsibilites": [
-                "Design, code, test and deploy smart contracts of The Graph Network.",
-                "Review code written by other team members.",
-                "Collaborate with auditors to ensure code quality standards and security.",
-                "Build back-end web services that interact with the Ethereum blockchain.",
-                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+                "Support the entire application lifecycle (concept, design, test, release and support)",
+                "Produce fully functional mobile applications writing clean code",
+                "Gather specific requirements and suggest solutions",
+                "Design interfaces to improve user experience",
+                "Liaise with Product development team to plan new features",
+                "Ensure new and legacy applications meet quality standards",
+                "Research and suggest new mobile products, applications and protocols",
+                "Stay up-to-date with new technology trends"
             ],
             "desired_skills": [
-                "Design, code, test and deploy smart contracts of The Graph Network.",
-                "Review code written by other team members.",
-                "Collaborate with auditors to ensure code quality standards and security.",
-                "Build back-end web services that interact with the Ethereum blockchain.",
-                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+                "Proven work experience as a Native Mobile Application developer (React Native, Kotlin, FLutter)",
+                "Demonstrable portfolio of released applications on the App store or the Android market",
+                "Experience with third-party libraries and APIs",
+                "Familiarity with OOP design principles",
+                "Excellent analytical skills with a good problem-solving attitude",
+                "Ability to perform in a team environment"
             ],
             "recommended": [
-                "Design, code, test and deploy smart contracts of The Graph Network.",
+                "In-depth knowledge of at least one programming language like Swift and Java",
                 "Review code written by other team members.",
                 "Collaborate with auditors to ensure code quality standards and security.",
-                "Build back-end web services that interact with the Ethereum blockchain.",
-                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+                "Write unit and UI tests to identify malfunctions",
+                "Troubleshoot and debug to optimize performance"
             ]
             
         }
