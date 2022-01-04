@@ -37,7 +37,7 @@
         }
     },
     {
-        "category": "Engineering",
+        "category": "Designing",
         "title": "Graphic Designer",
         "details": {
             "employment_type": "Full-Time",
@@ -74,34 +74,37 @@
         }
     },
     {
-        "category": "Engineering",
+        "category": "Designing",
         "title": "Content Writer",
         "details": {
             "employment_type": "Full-Time",
             "experience": 3,
             "location": "Remote",
             "team_lead": "Nishu Karna",
-            "what_we_are_looking_for": "To grow our Smart Contracts team, we are looking for an experienced, self-driven Senior Software Engineer interested in working on the Graph Network. Designed entirely by the team, it combines several crypto-economic mechanisms such as curation with bonding curves, staking, delegation, slashing, and rewards distribution. The team is responsible for keeping the network contracts safe and pushing the tech further to advance the space.",
+            "what_we_are_looking_for": "We are looking for a Content Writer to join our editorial team and enrich our websites with new blog posts, guides and marketing copy. If you’re familiar with producing online content and have an eye for detail, we’d like to meet you. Feel free to share samples of your work or portfolio of your published articles, along with your application.",
             "responsibilites": [
-                "Design, code, test and deploy smart contracts of The Graph Network.",
-                "Review code written by other team members.",
-                "Collaborate with auditors to ensure code quality standards and security.",
-                "Build back-end web services that interact with the Ethereum blockchain.",
-                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+                "Research industry-related topics (combining online sources, interviews and studies)",
+                "Write clear marketing copy to promote products/services",
+                "Proofread and edit blog posts before publication",
+                "Submit work to editors for input and approval",
+                "Coordinate with marketing and design teams to illustrate articles",
+                "Conduct simple keyword research and use SEO guidelines to increase web traffic",
+                "Identify customers’ needs and gaps in our content and recommend new topics",
+                "Ensure all-around consistency (style, fonts, images and tone)"
             ],
             "desired_skills": [
-                "Design, code, test and deploy smart contracts of The Graph Network.",
-                "Review code written by other team members.",
-                "Collaborate with auditors to ensure code quality standards and security.",
-                "Build back-end web services that interact with the Ethereum blockchain.",
-                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+                "Proven work experience as a Content Writer, Copywriter or similar role",
+                "Portfolio of published articles",
+                "Experience doing research using multiple sources",
+                "Familiarity with web publications",
+                "Excellent writing and editing skills",
+                "Hands-on experience with Content Management Systems (e.g. WordPress)"
             ],
             "recommended": [
-                "Design, code, test and deploy smart contracts of The Graph Network.",
-                "Review code written by other team members.",
-                "Collaborate with auditors to ensure code quality standards and security.",
-                "Build back-end web services that interact with the Ethereum blockchain.",
-                "Write scripts to automate monitoring and tracking to maintain the overall network health."
+                "BSc in Marketing, English, Journalism or related field",
+                "Ability to work independently with little or no daily supervision",
+                "Strong interpersonal skills and willingness to communicate with clients, colleagues, and management",
+                "Ability to work on multiple projects with different objectives simultaneously"
             ]
             
         }
