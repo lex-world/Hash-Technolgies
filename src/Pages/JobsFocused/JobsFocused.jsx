@@ -103,7 +103,7 @@ export default function JobsFocused(props) {
 
       <div className="jobsFocused__container__btn">
         <a href={`https://mail.google.com/mail/?view=cm&to=${
-            process.env.REACT_APP_HR
+            "humanresource.hash@gmail.com"
           }&su=${`Application for ${jobItem?.title}`}&body=Attach your CV here.`} target="_blank" rel="noreferrer">
           Apply Now
         </a>
