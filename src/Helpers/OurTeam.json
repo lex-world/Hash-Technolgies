@@ -24,30 +24,6 @@
         ]
     },
     {
-        "image": "https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/sudeep-co.jpg",
-        "name": "Sudeep Mishra",
-        "position": "Co-Founder, Vice President of Operations (Hashlabs)",
-        "quote": "I found, there is a huge market gap. So, I want to fill the gap by encouraging students to evolve in tech skills and grow individually. In Hash Technology, there is always an open opportunity for enhancing your skills and enjoy being engaged into a real world puzzles.",
-        "socialLinks": [
-            {
-                "name": "instagram",
-                "url": "https://www.instagram.com/himitsu.fushigi_/"
-            },
-            {
-                "name": "github",
-                "url": "https://github.com/lex-world"
-            },
-            {
-                "name": "twitter",
-                "url": "https://twitter.com/lexworld_"
-            },
-            {
-                "name": "facebook",
-                "url": "https://www.facebook.com/profile.php?id=100075313974997"
-            }
-        ]
-    },
-    {
         "image": "https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/sweta-hr.jpg",
         "name": "Sweta Maskey",
         "position": "Human Resource Manager",
