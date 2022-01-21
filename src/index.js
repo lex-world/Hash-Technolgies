@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './style.scss'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./style.scss";
+
+import DataLayerContextProvider from "./Context/Context";
 
 ReactDOM.render(
-  <>
+  <DataLayerContextProvider>
     <App />
-  </>,
-  document.getElementById('root')
+  </DataLayerContextProvider>,
+  document.getElementById("root")
 );

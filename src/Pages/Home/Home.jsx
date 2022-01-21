@@ -22,15 +22,39 @@ import Navbar from "../../Components/Navbar/Navbar";
 import TeamCard from "../../Components/TeamCard/TeamCard";
 import Footer from "../../Components/Footer/Footer";
 
-/**
- * @helpers
- */
-import Teams from "../../Helpers/OurTeam.json";
+// @context
+import { useDataLayerContextValue } from "../../Context/Context";
 
 export default function Home() {
+  const [{ works, teams }, dispatch] = useDataLayerContextValue();
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+
+    /** @dev only fetch data from api if work data on context is null */
+    works.length === 0 &&
+      fetch("https://hcms-hash.herokuapp.com/api/works?populate=*", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => res.json())
+        .then((res) => dispatch({ type: "SET_WORKS", payload: res.data }))
+        .catch((err) => console.log(err));
+
+    /** @dev only fetch data from api if team data on  context is null */
+    teams.length === 0 &&
+      fetch("https://hcms-hash.herokuapp.com/api/teams?populate=*", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => res.json())
+        .then((res) => dispatch({ type: "SET_TEAMS", payload: res.data }))
+        .catch((err) => console.log(err));
+  }, [teams.length, works.length, dispatch]);
 
   return (
     <div className="home__container">
@@ -98,78 +122,46 @@ export default function Home() {
        * @section => our work
        */}
       <div className="home__container__ourWork">
-        <div className="home__container__ourWork__workItem">
-          <div>
-            <img
-              src="https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/haminepal.jpg"
-              alt="Hami Nepal"
-            />
-          </div>
-          <div className="home__container__ourWork__workItem__content">
-            <span>Our Work</span>
-            <h1>Hami Nepal</h1>
-            <p className="highlight">
-              Hami Nepal runs on a no-fee basis, with all volunteers donating
-              their time and effort, which motivates Hami Nepal's team to work
-              and achieve more for the people.
-            </p>
-            <p>
-              Hami Nepal is a non-profit organisation, established in 2015 A.D.
-              and registered in 2020 A.D. (Regd.no. 609789065), which directly
-              connects the donors and the recipients. Our main objective is to
-              help anyone in need without any hesitations and expectation of
-              payback.
-            </p>
-            <a href="https://haminepal.org" target="_blank" rel="noreferrer">
-              haminepal.org
-            </a>
-          </div>
-        </div>
-        <div className="home__container__ourWork__workItem second">
-          <div className="home__container__ourWork__workItem__content">
-            <span>Our Work</span>
-            <h1>Thrift My Outfit</h1>
-            <p className="highlight">
-              Thrift My Outfit mainly focuses on normalizing thrifted outfits
-              like we use thrifted gadgets, digital goods etc.
-            </p>
-            <p>
-              Thrift My Outfit is a organization which helps outfit thrifts to
-              collab with other vendors and circle out same items since
-              marketing is not cheap, TMO helps every level of thrift owners to
-              sell their items.
-            </p>
-            <a href="https://thriftmyoutfit.com" target="_blank" rel="noreferrer">thriftmyoutfit.com</a>
-          </div>
-          <div>
-            <img
-              src="https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/thriftmyoutfit.jpg"
-              alt="thriftmyoutfit"
-            />
-          </div>
-        </div>
-        <div className="home__container__ourWork__workItem">
-          <div>
-            <img
-              src="https://hashtechnologies-ui.s3.ap-south-1.amazonaws.com/tbs.jpg"
-              alt="The Boring School"
-            />
-          </div>
-          <div className="home__container__ourWork__workItem__content">
-            <span>Our Work</span>
-            <h1>The Boring School</h1>
-            <p className="highlight">
-              The Boring School in short TBS is a platform for IT students to
-              hone their technological skills by solving real world puzzles.
-            </p>
-            <p>
-              The Boring School not just only aims to provide courses to develop the skills but also serves podcast, discussions and blog which is yet not completed but under development.
-            </p>
-            <a href="https://theboringschool.org" target="_blank" rel="noreferrer">
-              theboringschool.org
-            </a>
-          </div>
-        </div>
+        {works.length > 0 &&
+          works.map((work, index) => (
+            <div
+              key={index}
+              className={`home__container__ourWork__workItem ${
+                index % 2 !== 0 && "second"
+              }`}
+            >
+              {index % 2 === 0 && (
+                <div>
+                  <img
+                    src={work?.attributes?.coverImage?.data[0]?.attributes?.url}
+                    alt="Work Banner"
+                  />
+                </div>
+              )}
+
+              <div className="home__container__ourWork__workItem__content">
+                <span>Our Work</span>
+                <h1>{work?.attributes?.title}</h1>
+                <p className="highlight">{work?.attributes?.description}</p>
+                <p>{work?.attributes?.ExtraDescription}</p>
+                <a
+                  href={`https://${work?.attributes?.link}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {work?.attributes?.link}
+                </a>
+              </div>
+              {index % 2 !== 0 && (
+                <div>
+                  <img
+                    src={work?.attributes?.coverImage?.data[0]?.attributes?.url}
+                    alt="Work Banner"
+                  />
+                </div>
+              )}
+            </div>
+          ))}
       </div>
 
       {/**
@@ -184,9 +176,8 @@ export default function Home() {
         </p>
 
         <div className="home__container__ourTeam__teams">
-          {Teams.map((team, index) => (
-            <TeamCard key={index} team={team} />
-          ))}
+          {teams.length > 0 &&
+            teams.map((team, index) => <TeamCard key={index} team={team} />)}
         </div>
       </div>
 
@@ -196,8 +187,8 @@ export default function Home() {
       <div className="home__container__teamExpansion">
         <h1>We are expanding!</h1>
         <p>
-          Join Hash Technologies to help build the decentralized future and scale
-          human coordination on the internet.
+          Join Hash Technologies to help build the decentralized future and
+          scale human coordination on the internet.
         </p>
         <Link to="/jobs">View Jobs</Link>
       </div>
